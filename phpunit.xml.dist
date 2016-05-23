@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- disable strict to debug tests -->
+<phpunit bootstrap="./test/Bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="true"
+         syntaxCheck="true"
+         backupGlobals="true"
+         backupStaticAttributes="false">
+
+    <testsuites>
+        <testsuite name="Functional Test Suite">
+            <directory>./test/functional</directory>
+        </testsuite>
+    </testsuites>
+
+</phpunit>

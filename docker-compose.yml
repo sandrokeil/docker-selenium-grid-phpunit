@@ -1,0 +1,19 @@
+hub:
+  image: selenium/hub:2.53.0
+  container_name: hub
+  ports:
+    - 4444:4444
+
+firefox:
+  image: selenium/node-firefox-debug:2.53.0
+  ports:
+    - "5900"
+  links:
+    - hub:hub
+
+chrome:
+  image: selenium/node-chrome-debug:2.53.0
+  ports:
+    - "5900"
+  links:
+    - hub:hub
