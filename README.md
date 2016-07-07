@@ -1,5 +1,7 @@
 # Docker Selenium-Grid PHPUnit/Mink
 
+> This is the example application for the article [Selenium-Grid mit Docker im PHP Magazin 5.16](https://entwickler.de/php-magazin/php-magazin-5-16-252647.html "Parallele Akzeptanztests in wenigen Minuten")
+
 This is a simple example how to use a [Selenium-Grid](https://github.com/SeleniumHQ/selenium/wiki/Grid2) 
 with [PHPUnit](https://phpunit.de/) and [Mink](http://mink.behat.org/en/latest/). There are three test classes, to 
 demonstrate parallel execution of tests. One test has a duration of ~10s (uses `sleep()`). So you
